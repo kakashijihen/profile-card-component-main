@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(185deg, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.card_container {
+  margin: 170px auto 50px;
+  width: 303px;
+  height: 374px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .card_container {
+    width: 330px;
+  }
+}
+
+.bubbles {
+  background: url("/images/bg-pattern-card.svg");
+  height: 128px;
+}
+
+.photo {
+  position: absolute;
+  top: 87px;
+  left: 35%;
+  border: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 96px;
+}
+
+.personal_data_container {
+  background-color: white;
+  height: 8px;
+  padding: 75px;
+  text-align: center;
+}
+.personal_data_container_name {
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+}
+.personal_data_container_age, .personal_data_container_city {
+  color: hsl(0deg, 0%, 59%);
+}
+.personal_data_container_city {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.stats_card_container {
+  background-color: white;
+  border-top: 1px solid hsl(0deg, 0%, 59%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 96px;
+  box-sizing: border-box;
+}
+.stats_card_container_estadisticas {
+  text-align: center;
+}
+.stats_card_container_estadisticas_quantity {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: hsl(229deg, 23%, 23%);
+}
+.stats_card_container_estadisticas_units {
+  font-size: 0.6em;
+  color: hsl(0deg, 0%, 59%);
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=styles.css.map */

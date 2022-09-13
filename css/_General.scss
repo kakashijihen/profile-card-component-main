@@ -1,0 +1,27 @@
+@use 'Variables' as *;
+
+body{
+    padding: 0;
+    margin: 0;
+    background: {
+        color: $Darkcyan;
+        image:url(/images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+        repeat:no-repeat,no-repeat;
+        position: right 51vw bottom 20vh, left 45vw top 50vh;        
+    }
+    font-family: $KumbhSans;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+
+.attribution { 
+    font: {
+        weight:700;
+        size: 12px
+    }
+    
+    text-align: center;
+    a { color: hsl(228, 45%, 44%); }
+}
+ 

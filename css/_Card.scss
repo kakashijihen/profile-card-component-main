@@ -1,0 +1,77 @@
+@use 'Variables' as *;
+
+//mixin
+@mixin rv ($medida:375px) {
+    @media screen and (min-width: $medida) {
+        @content;
+    }
+}
+
+//card
+.card_container{
+    margin: 170px auto 50px;
+    width: 303px;
+    height: 374px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    @include rv(1440px){
+       width: 330px; 
+    }
+}
+
+.bubbles{
+    background: url('/images/bg-pattern-card.svg');
+    height: 128px;
+}
+
+.photo{
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 96px;
+}
+
+.personal_data_container{
+    background-color: white;
+    height: 8px;
+    padding: 75px;
+    text-align: center;
+    &_name{
+        font-weight: 700;
+        color: $Verydarkdesaturatedblue;
+    }
+    &_age,&_city{
+        color: $Darkgray;
+    }
+    &_city{
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+}
+
+.stats_card_container{
+    background-color: white;
+    border-top: 1px solid $Darkgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 96px;
+    box-sizing: border-box;
+    &_estadisticas{
+        text-align: center;
+        &_quantity{
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: $Verydarkdesaturatedblue;
+        }
+        &_units{
+            font-size: 0.6em;
+            color: $Darkgray;
+            letter-spacing: 2px;
+        }
+    }
+}
