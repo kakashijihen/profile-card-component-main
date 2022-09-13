@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: hsl(185deg, 75%, 39%);
-  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: right 51vw bottom 20vh, left 45vw top 50vh;
   font-family: "Kumbh Sans", sans-serif;
@@ -35,7 +35,7 @@ body {
 }
 
 .bubbles {
-  background: url("/images/bg-pattern-card.svg");
+  background: url("../images/bg-pattern-card.svg");
   height: 128px;
 }
 
